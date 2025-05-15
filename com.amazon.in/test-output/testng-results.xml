@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="10" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-17T22:03:42 IST" name="CrossBrowserSuite" finished-at="2025-04-17T22:08:27 IST" duration-ms="284533">
+    <groups>
+    </groups>
+    <test started-at="2025-04-17T22:03:42 IST" name="Chrome Test" finished-at="2025-04-17T22:07:48 IST" duration-ms="245524">
+      <class name="com.amazon_in_Test.Search_Result_SortBy_Test">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amazon_in_Test.Search_Result_SortBy_Test@2dcd168a]" started-at="2025-04-17T22:06:22 IST" name="setUp" finished-at="2025-04-17T22:06:33 IST" duration-ms="10202" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="rangeSliderLowerBoundPriceTest()[pri:0, instance:com.amazon_in_Test.Search_Result_SortBy_Test@2dcd168a]" started-at="2025-04-17T22:06:33 IST" name="rangeSliderLowerBoundPriceTest" finished-at="2025-04-17T22:06:43 IST" duration-ms="10143" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Featured"}
+  (Session info: chrome=135.0.7049.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [159a56374850ba83ee42cc3ab639d14c, findElement {using=link text, value=Featured}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54261}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54261/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 159a56374850ba83ee42cc3ab639d14c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Featured"}
+  (Session info: chrome=135.0.7049.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [159a56374850ba83ee42cc3ab639d14c, findElement {using=link text, value=Featured}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54261}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54261/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 159a56374850ba83ee42cc3ab639d14c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy19.getTagName(Unknown Source)
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:43)
+at com.amazon.in.SearchResult_Page.rangeSliderLowerBoundPrice(SearchResult_Page.java:37)
+at com.amazon_in_Test.Search_Result_SortBy_Test.rangeSliderLowerBoundPriceTest(Search_Result_SortBy_Test.java:21)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rangeSliderLowerBoundPriceTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon_in_Test.Search_Result_SortBy_Test@2dcd168a]" started-at="2025-04-17T22:06:43 IST" name="tearDown" finished-at="2025-04-17T22:06:43 IST" duration-ms="439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amazon_in_Test.Search_Result_SortBy_Test@2dcd168a]" started-at="2025-04-17T22:06:43 IST" name="setUp" finished-at="2025-04-17T22:06:53 IST" duration-ms="10163" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchBoxTest()[pri:0, instance:com.amazon_in_Test.Search_Result_SortBy_Test@2dcd168a]" started-at="2025-04-17T22:06:53 IST" name="searchBoxTest" finished-at="2025-04-17T22:07:01 IST" duration-ms="7406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchBoxTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon_in_Test.Search_Result_SortBy_Test@2dcd168a]" started-at="2025-04-17T22:07:01 IST" name="tearDown" finished-at="2025-04-17T22:07:02 IST" duration-ms="1335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amazon_in_Test.Search_Result_SortBy_Test -->
+      <class name="com.amazon_in_Test.SearchCategorysTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amazon_in_Test.SearchCategorysTest@6138e79a]" started-at="2025-04-17T22:05:32 IST" name="setUp" finished-at="2025-04-17T22:05:42 IST" duration-ms="9762" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getAllCategories()[pri:0, instance:com.amazon_in_Test.SearchCategorysTest@6138e79a]" started-at="2025-04-17T22:05:42 IST" name="getAllCategories" finished-at="2025-04-17T22:05:52 IST" duration-ms="10094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllCategories -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon_in_Test.SearchCategorysTest@6138e79a]" started-at="2025-04-17T22:05:52 IST" name="tearDown" finished-at="2025-04-17T22:05:53 IST" duration-ms="802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amazon_in_Test.SearchCategorysTest@6138e79a]" started-at="2025-04-17T22:05:53 IST" name="setUp" finished-at="2025-04-17T22:06:12 IST" duration-ms="19275" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGetAllCategories()[pri:0, instance:com.amazon_in_Test.SearchCategorysTest@6138e79a]" started-at="2025-04-17T22:06:12 IST" name="testGetAllCategories" finished-at="2025-04-17T22:06:22 IST" duration-ms="10064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAllCategories -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon_in_Test.SearchCategorysTest@6138e79a]" started-at="2025-04-17T22:06:22 IST" name="tearDown" finished-at="2025-04-17T22:06:22 IST" duration-ms="368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amazon_in_Test.SearchCategorysTest -->
+      <class name="com.amazon_in_Test.Update_IteamQty_Incart_Test">
+        <test-method signature="w3school()[pri:0, instance:com.amazon_in_Test.Update_IteamQty_Incart_Test@1f010bf0]" started-at="2025-04-17T22:03:43 IST" name="w3school" finished-at="2025-04-17T22:05:06 IST" duration-ms="82946" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=135.0.7049.86)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5c03104f2c5a6d7343c3947a8b1371f7, get {url=https://www.w3schools.com/html/default.asp}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53154}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53154/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c03104f2c5a6d7343c3947a8b1371f7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=135.0.7049.86)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5c03104f2c5a6d7343c3947a8b1371f7, get {url=https://www.w3schools.com/html/default.asp}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53154}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53154/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c03104f2c5a6d7343c3947a8b1371f7
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+at com.amazon_in_Test.Update_IteamQty_Incart_Test.w3school(Update_IteamQty_Incart_Test.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- w3school -->
+      </class> <!-- com.amazon_in_Test.Update_IteamQty_Incart_Test -->
+      <class name="com.amazon_in_Test.Search_Product_Test">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amazon_in_Test.Search_Product_Test@41709512]" started-at="2025-04-17T22:05:06 IST" name="setUp" finished-at="2025-04-17T22:05:24 IST" duration-ms="18018" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testScrollAndClickProduct()[pri:0, instance:com.amazon_in_Test.Search_Product_Test@41709512]" started-at="2025-04-17T22:05:24 IST" name="testScrollAndClickProduct" finished-at="2025-04-17T22:05:31 IST" duration-ms="6974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScrollAndClickProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon_in_Test.Search_Product_Test@41709512]" started-at="2025-04-17T22:05:31 IST" name="tearDown" finished-at="2025-04-17T22:05:32 IST" duration-ms="1322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amazon_in_Test.Search_Product_Test -->
+      <class name="com.amazon_in_Test.Product_AddedCart_price_Qty_Test">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amazon_in_Test.Product_AddedCart_price_Qty_Test@21a21c64]" started-at="2025-04-17T22:07:02 IST" name="setUp" finished-at="2025-04-17T22:07:16 IST" duration-ms="14206" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AddProductInCartAndSelectQty()[pri:0, instance:com.amazon_in_Test.Product_AddedCart_price_Qty_Test@21a21c64]" started-at="2025-04-17T22:07:16 IST" name="AddProductInCartAndSelectQty" finished-at="2025-04-17T22:07:47 IST" duration-ms="30707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProductInCartAndSelectQty -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon_in_Test.Product_AddedCart_price_Qty_Test@21a21c64]" started-at="2025-04-17T22:07:47 IST" name="tearDown" finished-at="2025-04-17T22:07:48 IST" duration-ms="1056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amazon_in_Test.Product_AddedCart_price_Qty_Test -->
+    </test> <!-- Chrome Test -->
+    <test started-at="2025-04-17T22:03:42 IST" name="Firefox Test" finished-at="2025-04-17T22:08:27 IST" duration-ms="284530">
+      <class name="com.amazon_in_Test.Search_Result_SortBy_Test">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amazon_in_Test.Search_Result_SortBy_Test@31bcf236]" started-at="2025-04-17T22:07:13 IST" name="setUp" finished-at="2025-04-17T22:07:25 IST" duration-ms="11950" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="rangeSliderLowerBoundPriceTest()[pri:0, instance:com.amazon_in_Test.Search_Result_SortBy_Test@31bcf236]" started-at="2025-04-17T22:07:25 IST" name="rangeSliderLowerBoundPriceTest" finished-at="2025-04-17T22:07:38 IST" duration-ms="13190" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: Featured
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [a67fa015-a678-42fc-acc1-a5a6393bd77a, findElement {using=link text, value=Featured}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.2, moz:accessibilityChecks: false, moz:buildID: 20250414091429, moz:debuggerAddress: 127.0.0.1:8218, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12900, moz:profile: C:\Users\HP\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:8218/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: a67fa015-a678-42fc-acc1-a5a6393bd77a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: Featured
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [a67fa015-a678-42fc-acc1-a5a6393bd77a, findElement {using=link text, value=Featured}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.2, moz:accessibilityChecks: false, moz:buildID: 20250414091429, moz:debuggerAddress: 127.0.0.1:8218, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12900, moz:profile: C:\Users\HP\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:8218/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: a67fa015-a678-42fc-acc1-a5a6393bd77a
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy19.getTagName(Unknown Source)
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:43)
+at com.amazon.in.SearchResult_Page.rangeSliderLowerBoundPrice(SearchResult_Page.java:37)
+at com.amazon_in_Test.Search_Result_SortBy_Test.rangeSliderLowerBoundPriceTest(Search_Result_SortBy_Test.java:21)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rangeSliderLowerBoundPriceTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon_in_Test.Search_Result_SortBy_Test@31bcf236]" started-at="2025-04-17T22:07:38 IST" name="tearDown" finished-at="2025-04-17T22:07:40 IST" duration-ms="2428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amazon_in_Test.Search_Result_SortBy_Test@31bcf236]" started-at="2025-04-17T22:07:40 IST" name="setUp" finished-at="2025-04-17T22:07:53 IST" duration-ms="12714" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchBoxTest()[pri:0, instance:com.amazon_in_Test.Search_Result_SortBy_Test@31bcf236]" started-at="2025-04-17T22:07:53 IST" name="searchBoxTest" finished-at="2025-04-17T22:07:57 IST" duration-ms="3908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchBoxTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon_in_Test.Search_Result_SortBy_Test@31bcf236]" started-at="2025-04-17T22:07:57 IST" name="tearDown" finished-at="2025-04-17T22:08:01 IST" duration-ms="3902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amazon_in_Test.Search_Result_SortBy_Test -->
+      <class name="com.amazon_in_Test.SearchCategorysTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amazon_in_Test.SearchCategorysTest@797cf65c]" started-at="2025-04-17T22:06:15 IST" name="setUp" finished-at="2025-04-17T22:06:37 IST" duration-ms="21877" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getAllCategories()[pri:0, instance:com.amazon_in_Test.SearchCategorysTest@797cf65c]" started-at="2025-04-17T22:06:37 IST" name="getAllCategories" finished-at="2025-04-17T22:06:40 IST" duration-ms="3485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllCategories -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon_in_Test.SearchCategorysTest@797cf65c]" started-at="2025-04-17T22:06:40 IST" name="tearDown" finished-at="2025-04-17T22:06:44 IST" duration-ms="3673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amazon_in_Test.SearchCategorysTest@797cf65c]" started-at="2025-04-17T22:06:44 IST" name="setUp" finished-at="2025-04-17T22:07:07 IST" duration-ms="22962" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGetAllCategories()[pri:0, instance:com.amazon_in_Test.SearchCategorysTest@797cf65c]" started-at="2025-04-17T22:07:07 IST" name="testGetAllCategories" finished-at="2025-04-17T22:07:08 IST" duration-ms="1056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAllCategories -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon_in_Test.SearchCategorysTest@797cf65c]" started-at="2025-04-17T22:07:08 IST" name="tearDown" finished-at="2025-04-17T22:07:13 IST" duration-ms="5116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amazon_in_Test.SearchCategorysTest -->
+      <class name="com.amazon_in_Test.Update_IteamQty_Incart_Test">
+        <test-method signature="w3school()[pri:0, instance:com.amazon_in_Test.Update_IteamQty_Incart_Test@134d26af]" started-at="2025-04-17T22:03:43 IST" name="w3school" finished-at="2025-04-17T22:05:00 IST" duration-ms="77649" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Remote browser did not respond to getCurrentUrl
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Remote browser did not respond to getCurrentUrl
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:327)
+at com.amazon_in_Test.Update_IteamQty_Incart_Test.w3school(Update_IteamQty_Incart_Test.java:22)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- w3school -->
+      </class> <!-- com.amazon_in_Test.Update_IteamQty_Incart_Test -->
+      <class name="com.amazon_in_Test.Search_Product_Test">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amazon_in_Test.Search_Product_Test@66ac5762]" started-at="2025-04-17T22:05:00 IST" name="setUp" finished-at="2025-04-17T22:05:54 IST" duration-ms="53235" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testScrollAndClickProduct()[pri:0, instance:com.amazon_in_Test.Search_Product_Test@66ac5762]" started-at="2025-04-17T22:05:54 IST" name="testScrollAndClickProduct" finished-at="2025-04-17T22:06:11 IST" duration-ms="17212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScrollAndClickProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon_in_Test.Search_Product_Test@66ac5762]" started-at="2025-04-17T22:06:11 IST" name="tearDown" finished-at="2025-04-17T22:06:15 IST" duration-ms="3967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amazon_in_Test.Search_Product_Test -->
+      <class name="com.amazon_in_Test.Product_AddedCart_price_Qty_Test">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amazon_in_Test.Product_AddedCart_price_Qty_Test@4fad9bb2]" started-at="2025-04-17T22:08:01 IST" name="setUp" finished-at="2025-04-17T22:08:12 IST" duration-ms="10755" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AddProductInCartAndSelectQty()[pri:0, instance:com.amazon_in_Test.Product_AddedCart_price_Qty_Test@4fad9bb2]" started-at="2025-04-17T22:08:12 IST" name="AddProductInCartAndSelectQty" finished-at="2025-04-17T22:08:18 IST" duration-ms="6568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProductInCartAndSelectQty -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon_in_Test.Product_AddedCart_price_Qty_Test@4fad9bb2]" started-at="2025-04-17T22:08:18 IST" name="tearDown" finished-at="2025-04-17T22:08:27 IST" duration-ms="8673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amazon_in_Test.Product_AddedCart_price_Qty_Test -->
+    </test> <!-- Firefox Test -->
+  </suite> <!-- CrossBrowserSuite -->
+</testng-results>
